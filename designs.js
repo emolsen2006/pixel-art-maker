@@ -1,10 +1,17 @@
 // Select color input
 // Select size input
 
-// When size is submitted by the user, call makeGrid()
+/* Order of development:
+  1. Submit button event listener / call to makeGrid method
+  2. Grab table dimensions and add html element (no jQuery)
+  3.
+*/
 
-function makeGrid() {
+//submit button Event listener
+var submit = document.getElementById('submit-button');
+submit.addEventListener('click', makeGrid);
 
-// Your code goes here!
-
+function makeGrid(e) {
+  e.preventDefault();
+  console.log('button clicked');
 }
